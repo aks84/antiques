@@ -1,13 +1,16 @@
 <div id="<%= dom_id item %>">
-  <h2>
-        <%= item.name %>
-  </h2>
+ 
 
   <p>
-   <% item.images.each do |image| %>
+<!--    <% item.images.each do |image| %>
       <%= image_tag(image) %>
-    <% end %>
+    <% end %> -->
+    <%= image_tag(item.images.first) %>
   </p>
+
+   <h2>
+        <%= item.name %>
+  </h2>
 
   <p>
      <%= item.description %>

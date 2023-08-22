@@ -13,3 +13,44 @@
  *= require_tree .
  *= require_self
  */
+
+/*HEADER style*/
+header {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    background: azure;
+}
+
+.site_branding {
+    width: 50%;
+}
+
+.site_navbar {
+    width: 50%;
+}
+
+
+
+/* item show page */
+.showitem_full {
+    display: flex;
+    padding: 10px;
+}
+
+
+.showitem_images {
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.showitem_images img{
+	width:95%;
+	padding-bottom: 15px;
+}
+
+.showitem_desc {
+    padding: 10px;
+    width: 50%;
+}
