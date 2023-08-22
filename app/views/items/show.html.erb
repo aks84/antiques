@@ -9,9 +9,8 @@
 </div>
 
 <div class="showitem_desc">
-     <h2>
-        <%= @item.name %>
-  </h2>
+  
+  <h2><%= @item.name %></h2>
 
   <p>
      <%= @item.description %>
@@ -25,7 +24,7 @@
   <p>
     <strong>Current bid:</strong>
     <%= number_to_currency(@item.current_bid, unit: "₹ " ) %>
-    <%= link_to "Bid Now", edit_item_path %>
+    <%= link_to "Bid Now", new_bid_path %>
   </p>
 
   <p>
@@ -42,7 +41,7 @@
 
 <div>
   <%= link_to "Edit this item", edit_item_path(@item) %> |
-  <%= link_to "Back to items", items_path %>
+  
 
   <!-- <%= button_to "Destroy this item", @item, method: :delete %> -->
 </div>

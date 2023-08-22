@@ -1,16 +1,16 @@
-<div id="<%= dom_id item %>">
+<div class="list_item" id="<%= dom_id item %>">
  
-
-  <p>
-<!--    <% item.images.each do |image| %>
-      <%= image_tag(image) %>
-    <% end %> -->
+<div class="listItem_thumb">
+  
     <%= image_tag(item.images.first) %>
-  </p>
+</div>
 
+<div class="listItem_text">
    <h2>
-        <%= item.name %>
+      
+        <%= link_to item.name, item %>
   </h2>
+  
 
   <p>
      <%= item.description %>
@@ -30,5 +30,6 @@
     <strong>End time:</strong>
     <%= item.end_time %>
   </p>
+</div>
 
 </div>

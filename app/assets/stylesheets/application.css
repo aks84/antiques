@@ -36,6 +36,8 @@ header {
 .showitem_full {
     display: flex;
     padding: 10px;
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -45,12 +47,33 @@ header {
     display: flex;
     flex-direction: column;
 }
-.showitem_images img{
-	width:95%;
-	padding-bottom: 15px;
+
+.showitem_images img {
+    width: 95%;
+    padding-bottom: 15px;
 }
 
 .showitem_desc {
     padding: 10px;
     width: 50%;
+}
+
+
+/* item list */
+
+div#items {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.listItem_thumb {
+    margin-right: 20px;
+}
+
+.list_item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
 }
