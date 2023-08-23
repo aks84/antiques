@@ -11,7 +11,8 @@
   </head>
 
   <body>
-    <header>
+    <div class="content_wrapper">
+          <header>
       <div class="site_branding">
         <h1><%= link_to "AntiquePlaza", root_path %></h1>
       </div>
@@ -23,9 +24,18 @@
       </div>
       
     </header>
-    <%= yield %>
+   
+    
+    <main>
+       <div class="notices">
+         <p class="notice"><%= notice %></p>
+         <p class="alert"><%= alert %></p>
+       </div>
+      <%= yield %>
+    </main>
     <footer>
       2023 - Copyrights Reserved @ AmulyaShahi 
     </footer>
+    </div>
   </body>
 </html>

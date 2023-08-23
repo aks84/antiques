@@ -1,5 +1,6 @@
 class BidsController < ApplicationController
   before_action :set_bid, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /bids or /bids.json
   def index
