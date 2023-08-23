@@ -16,7 +16,7 @@
 
 /*HEADER style*/
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -24,19 +24,21 @@
 .content_wrapper {
     width: 80%;
     margin: auto;
-/*    background: lightcyan;*/
+    line-height: 1.7;
+    /*    background: lightcyan;*/
 }
 
 header {
     display: flex;
     flex-direction: row;
     height: 70px;
-    background: cyan;
     position: sticky;
     width: 100%;
     top: 0;
     z-index: 10;
     margin: 0;
+    background: rgb(45, 234, 244);
+    background: linear-gradient(90deg, rgba(45, 234, 244, 1) 28%, rgba(12, 183, 226, 1) 100%);
 }
 
 .site_branding {
@@ -47,13 +49,21 @@ header {
     width: 50%;
 }
 
+a.logo_link {
+    text-decoration: none;
+    margin-left: 10px;
+    color: brown;
+}
 
 /*main container*/
 
 main {
-/*    margin-top:90px;*/
+    margin-top: 15px;
 }
 
+.main_wrapper {
+    margin: auto;
+}
 
 /* item show page */
 .showitem_full {
@@ -72,7 +82,7 @@ main {
     width: 50%;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .showitem_images img {
@@ -122,7 +132,8 @@ div#items {
     margin-bottom: 15px;
 }
 
-footer  {
+footer {
     height: 100px;
-    background: cyan;
+    background: rgb(45, 234, 244);
+    background: linear-gradient(90deg, rgba(45, 234, 244, 1) 28%, rgba(12, 183, 226, 1) 100%);
 }

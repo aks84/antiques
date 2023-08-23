@@ -12,26 +12,27 @@
 
   <body>
     <div class="content_wrapper">
-          <header>
-      <div class="site_branding">
-        <h1><%= link_to "AntiquePlaza", root_path %></h1>
-      </div>
-      <div class="site_navbar">
-       <nav>
-          <%= link_to "Items", items_path %>
-          <%= link_to "Add Item", new_item_path %>
-       </nav>
-      </div>
-      
-    </header>
+      <header>
+        <div class="site_branding">
+          <h1><%= link_to "AntiquePlaza", root_path, class: 'logo_link' %></h1>
+        </div>
+        <div class="site_navbar">
+        <nav>
+            <%= link_to "Items", items_path %>
+            <%= link_to "Add Item", new_item_path %>
+        </nav>
+        </div>
+      </header>
    
     
     <main>
-       <div class="notices">
+      <div class='main_wrapper'> 
+         <div class="notices">
          <p class="notice"><%= notice %></p>
          <p class="alert"><%= alert %></p>
        </div>
       <%= yield %>
+      </div>
     </main>
     <footer>
       2023 - Copyrights Reserved @ AmulyaShahi 

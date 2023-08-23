@@ -24,7 +24,7 @@
   <p>
     <strong>Current bid:</strong>
     <%= number_to_currency(@item.current_bid, unit: "₹ " ) %>
-    <%= link_to "Bid Now", new_bid_path, class: "bidnow_btn" %>
+    <%= link_to "Bid Now", new_item_bid_path(@item), class: "bidnow_btn" %>
   </p>
 
   <p>
